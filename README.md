@@ -32,3 +32,4 @@ This is just an example plugin
       });
     </script>
 ```
+ Codepen: https://codepen.io/jokd/pen/VwmgjYP
