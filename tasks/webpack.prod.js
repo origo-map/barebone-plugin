@@ -1,6 +1,5 @@
 const webpack = require('webpack');
-const merge = require('webpack-merge');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const { merge } = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const common = require('./webpack.common.js');
 
@@ -47,13 +46,6 @@ module.exports = merge(common, {
     }]
   },
   plugins: [
-    new UglifyJSPlugin({
-      uglifyOptions: {
-        output: {
-          beautify: false
-        }
-      }
-    }),
     new webpack.optimize.AggressiveMergingPlugin(),
     new MiniCssExtractPlugin({
       filename: '../css/barebone.css'
