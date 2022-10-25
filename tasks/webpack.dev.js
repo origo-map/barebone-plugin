@@ -4,7 +4,7 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
   output: {
-    path: `${__dirname}/../../ek-extern-till-2-6/plugins`,
+    path: `${__dirname}/../../origo/plugins`,
     publicPath: '/build/js',
     filename: 'barebone.js',
     libraryTarget: 'var',
