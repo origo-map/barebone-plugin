@@ -6,8 +6,8 @@
   "scripts": {
     "start": "npm-run-all --parallel watch-js watch-sass",
     "watch-js": "webpack-dev-server --config ./tasks/webpack.dev.js --mode development",
-    "watch-sass": "node-sass -w --include-path scss scss/barebone-plugin.scss ../Origo_localization/origo/plugins/barebone.css",
-    "prewatch-sass": "node-sass --include-path scss scss/barebone-plugin.scss ../Origo_localization/origo/plugins/barebone.css",
+    "watch-sass": "node-sass -w --include-path scss scss/barebone-plugin.scss ../origo/plugins/barebone.css",
+    "prewatch-sass": "node-sass --include-path scss scss/barebone-plugin.scss ../origo/plugins/barebone.css",
     "build": "webpack --config ./tasks/webpack.prod.js && npm run build-sass",
     "build-sass": "node-sass --include-path scss scss/barebone-plugin.scss build/css/barebone.css"
   },
