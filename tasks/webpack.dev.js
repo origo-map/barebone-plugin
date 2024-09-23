@@ -1,7 +1,6 @@
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
 
-
 module.exports = merge(common, {
   output: {
     path: `${__dirname}/../../origo/plugins`,
@@ -30,6 +29,7 @@ module.exports = merge(common, {
   devServer: {
     static: './',
     port: 9008,
+    hot: false, // enabled by default, enable and configure for HMR
     devMiddleware: {
       writeToDisk: true
     }
